@@ -1,5 +1,6 @@
 
 exports.align = function(target, query) {
+    //@node2faas-force
     const bioseq = require("bioseq");
     var rst = bioseq.align(target, query);
     var fmt = bioseq.cigar2gaps(target, query, rst.position, rst.CIGAR);
